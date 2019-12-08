@@ -12,15 +12,6 @@ public class FromArray {
     }
 
 
-
-    public TLVClass ToTLV(int offs){
-        int tlvID = ToShort(offs);
-        int tlvSize = ToShort(offs+2);
-        byte[] tlvData = new byte [tlvSize ];
-        System.arraycopy(array,offs+4,tlvData,0,tlvSize);
-        return new TLVClass(tlvID,tlvSize,tlvData);
-    }
-
     public TLVIDClass ToTLVID(int offs){
         int tlvID = ToShort(offs);
         int tlvSize = ToShort(offs+2);

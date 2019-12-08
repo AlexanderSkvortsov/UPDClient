@@ -52,7 +52,6 @@ public class STLVDetails {
         put(1000,    new TLV( tASCII.ordinal(), "наименование документа", "-"));
         put(1001,    new TLV( tBYTE.ordinal(), "пр. автоматического режима", "АВТОМАТ. РЕЖИМ"));
         put(1002,    new TLV( tBYTE.ordinal(), "пр. автономного режима", "АВТОНОМН. РЕЖИМ"));
-        put(1002,    new TLV( tBYTE.ordinal(), "пр. автономного режима", "АВТОНОМН. РЕЖИМ"));
         put(1005,    new TLV( tASCII.ordinal(), "адрес оператора перевода", "АДР. ОП. ПЕРЕВОДА"));
         put(1008,    new TLV(tF2 + tASCII.ordinal(), "телефон или электронный адрес покупателя", "-")); // go to 0x45xx
         put(1009,    new TLV(tF1 + tASCII.ordinal(), "адрес расчетов", "-"));
